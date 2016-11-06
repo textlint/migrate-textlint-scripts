@@ -23,12 +23,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/migrate-textlint-scripts.git"
+    "url": "https://github.com/textlint/migrate-textlint-scripts.git"
   },
   "bugs": {
-    "url": "https://github.com/azu/migrate-textlint-scripts/issues"
+    "url": "https://github.com/textlint/migrate-textlint-scripts/issues"
   },
-  "homepage": "https://github.com/azu/migrate-textlint-scripts",
+  "homepage": "https://github.com/textlint/migrate-textlint-scripts",
   "dependencies": {
     "npe": "^1.0.0",
     "shelljs": "^0.7.5"

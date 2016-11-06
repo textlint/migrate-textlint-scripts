@@ -55,7 +55,7 @@ Simply run `migrate-textlint-scripts`:
 
 ## Changelog
 
-See [Releases page](https://github.com/azu/migrate-textlint-scripts/releases).
+See [Releases page](https://github.com/textlint/migrate-textlint-scripts/releases).
 
 ## Running tests
 
@@ -67,7 +67,7 @@ Install devDependencies and Run `npm test`:
 
 Pull requests and stars are always welcome.
 
-For bugs and feature requests, [please create an issue](https://github.com/azu/migrate-textlint-scripts/issues).
+For bugs and feature requests, [please create an issue](https://github.com/textlint/migrate-textlint-scripts/issues).
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`

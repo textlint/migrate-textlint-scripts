@@ -13,7 +13,7 @@ const exec = function(command) {
     }
 };
 const npe = function(key, value) {
-    exec(`${npeBin} ${key} ${value}`);
+    exec(`${npeBin} "${key}" "${value}"`);
 };
 // Exist config files
 const babelrcPath = path.join(process.cwd(), ".babelrc");

@@ -33,7 +33,7 @@ Simply to use one devDependencies:
 
 ```js
   "scripts": {
-    "test": "textlint-scripts" test,
+    "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "watch": "textlint-scripts build --watch",
     "prepublish": "npm run --if-present build"

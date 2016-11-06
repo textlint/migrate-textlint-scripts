@@ -1,0 +1,36 @@
+{
+  "directories": {
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/"
+  ],
+  "bin": {
+    "migrate-textlint-scripts": "./bin/migrate-textlint-scripts.js"
+  },
+  "name": "migrate-textlint-scripts",
+  "version": "1.0.0",
+  "description": "migration tool for using textlint-scripts.",
+  "main": "lib/migrate-textlint-scripts.js",
+  "scripts": {
+    "test": "bash test/test.sh"
+  },
+  "keywords": [
+    "textlint",
+    "migrate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/migrate-textlint-scripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/migrate-textlint-scripts/issues"
+  },
+  "homepage": "https://github.com/azu/migrate-textlint-scripts",
+  "dependencies": {
+    "npe": "^1.0.0",
+    "shelljs": "^0.7.5"
+  }
+}

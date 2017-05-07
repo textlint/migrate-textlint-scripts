@@ -1,5 +1,7 @@
 # migrate-textlint-scripts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/textlint/migrate-textlint-scripts.svg)](https://greenkeeper.io/)
+
 Migration tool for using [textlint-scripts](https://github.com/textlint/textlint-scripts "textlint-scripts").
 
 **Before**:

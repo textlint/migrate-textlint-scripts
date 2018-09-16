@@ -9,7 +9,7 @@ const echo = function(message) {
 const exec = function(command) {
     echo("Run: " + command);
     if (shelljs.exec(command).code !== 0) {
-        throw new Error("Fail to excute:" + command);
+        throw new Error("Fail to execute:" + command);
     }
 };
 const npe = function(key, value) {
@@ -31,7 +31,11 @@ const removeDevDeps = [
     "babel-cli",
     "babel-preset-es2015",
     "babel-preset-latest",
+    "babel-preset-env",
     "babel-register",
+    "@babel/register",
+    "@babel/cli",
+    "@babel/preset-env",
     "mocha",
     "textlint-tester"
 ];

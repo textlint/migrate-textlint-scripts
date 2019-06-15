@@ -73,7 +73,7 @@ if (fs.existsSync(mochaOptPath)) {
     const replaced = mochaOptsContent
         .replace("--compilers js:babel-register", "--require textlint-scripts/register")
         .replace("--compilers js:@babel/register", "--require textlint-scripts/register")
-        .replace("--require  babel-register", "--require textlint-scripts/register")
+        .replace("--require babel-register", "--require textlint-scripts/register")
         .replace("--require @babel/register", "--require textlint-scripts/register");
     fs.writeFileSync(mochaOptPath, replaced, "utf-8");
     log(`✔ Rewrite ${mochaOptPath}`);

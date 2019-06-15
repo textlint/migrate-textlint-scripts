@@ -36,20 +36,6 @@ const npe = function (key, value) {
 // Exist config files
 const babelrcPath = path.join(process.cwd(), ".babelrc");
 const mochaOptPath = path.join(process.cwd(), "test", "mocha.opts");
-if (fs.existsSync(babelrcPath)) {
-    log(`rm ${babelrcPath}`);
-    shelljs.rm(babelrcPath);
-}
-if (fs.existsSync(mochaOptPath)) {
-    const mochaOptsContent = fs.readFileSync(mochaOptPath, "utf-8");
-    const replaced = mochaOptsContent
-        .replace("--compilers js:babel-register", "--require textlint-scripts/register")
-        .replace("--compilers js:@babel/register", "--require textlint-scripts/register")
-        .replace("--require  babel-register", "--require textlint-scripts/register")
-        .replace("--require @babel/register", "--require textlint-scripts/register");
-    fs.writeFileSync(mochaOptPath, replaced, "utf-8");
-    log(`✔ Rewrite ${mochaOptPath}`);
-}
 // Remove exist devDependencies
 const removeDevDeps = [
     "babel-cli",
@@ -77,6 +63,22 @@ exec(`${INSTALL_COMMAND} textlint-scripts`);
 npe("scripts.build", "textlint-scripts build");
 npe("scripts.watch", "textlint-scripts build --watch");
 npe("scripts.test", "textlint-scripts test");
+// Modify mocha.opts
+if (fs.existsSync(babelrcPath)) {
+    log(`rm ${babelrcPath}`);
+    shelljs.rm(babelrcPath);
+}
+if (fs.existsSync(mochaOptPath)) {
+    const mochaOptsContent = fs.readFileSync(mochaOptPath, "utf-8");
+    const replaced = mochaOptsContent
+        .replace("--compilers js:babel-register", "--require textlint-scripts/register")
+        .replace("--compilers js:@babel/register", "--require textlint-scripts/register")
+        .replace("--require  babel-register", "--require textlint-scripts/register")
+        .replace("--require @babel/register", "--require textlint-scripts/register");
+    fs.writeFileSync(mochaOptPath, replaced, "utf-8");
+    log(`✔ Rewrite ${mochaOptPath}`);
+}
+
 // Complete
 
 log("✔ Complete!");

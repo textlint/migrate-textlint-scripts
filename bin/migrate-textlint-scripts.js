@@ -20,7 +20,7 @@ const cli = meow(`
         }
     }
 });
-const USE_YARN = cli.flags.yarn || fs.existsSync(path.join(process.cwd(), "yarn.lock"));
+const USE_YARN = cli.flags.yarn;
 const log = function (message) {
     console.info(message);
 };

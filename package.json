@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/textlint/migrate-textlint-scripts",
   "dependencies": {
+    "meow": "^5.0.0",
     "npe": "^1.0.0",
     "shelljs": "^0.7.5"
   }

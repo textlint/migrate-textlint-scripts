@@ -3,8 +3,24 @@ const fs = require("fs");
 const path = require("path");
 const shelljs = require("shelljs");
 const npeBin = require.resolve(".bin/npe");
-
-const USE_YARN = fs.existsSync(path.join(process.cwd(), "yarn.lock"));
+const meow = require('meow');
+const cli = meow(`
+    Usage
+      $ migrate-textlint-scripts
+ 
+    Options
+      --yarn  Use yarn if it is specified
+ 
+    Examples
+      $ migrate-textlint-scripts --yarn
+`, {
+    flags: {
+        yarn: {
+            type: 'boolean'
+        }
+    }
+});
+const USE_YARN = cli.flags.yarn || fs.existsSync(path.join(process.cwd(), "yarn.lock"));
 const log = function (message) {
     console.info(message);
 };

@@ -48,9 +48,21 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
+CLI command:
+
+    Usage
+      $ migrate-textlint-scripts
+ 
+    Options
+      --yarn  Use yarn if it is specified
+ 
+    Examples
+      $ migrate-textlint-scripts --yarn
+  
+
 Simply run `migrate-textlint-scripts`:
 
-    $ migrate-textlint-scripts
+    $ npx migrate-textlint-scripts
     # Migrating...
 
 ## Changelog

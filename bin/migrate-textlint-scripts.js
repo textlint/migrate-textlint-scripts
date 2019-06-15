@@ -51,7 +51,7 @@ const removeDevDeps = [
     "textlint-tester"
 ];
 
-log(`Package Manager:  ${USE_YARN ? "yarn" : "npm"}`);
+log(`Package Manager: ${USE_YARN ? "yarn" : "npm"}`);
 const INSTALL_COMMAND = USE_YARN ? "yarn install --dev" : "npm install --save-dev";
 const UNINSTALL_COMMAND = USE_YARN ? "yarn remove --dev" : "npm uninstall --save-dev";
 exec(`${UNINSTALL_COMMAND} ${removeDevDeps.join(" ")}`);

@@ -12,3 +12,4 @@ cd ${currentDir}/clone-tmp
 git checkout -b 1.1.0 refs/tags/1.1.0
 node ${parentDir}/bin/migrate-textlint-scripts.js
 # success if exit 0
+rm -rf ${currentDir}/clone-tmp

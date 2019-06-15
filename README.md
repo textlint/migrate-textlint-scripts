@@ -57,7 +57,7 @@ CLI command:
       --yarn  Use yarn if it is specified
  
     Examples
-      $ migrate-textlint-scripts --yarn
+      $ migrate-textlint-scripts
   
 
 Simply run `migrate-textlint-scripts`:
